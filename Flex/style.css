@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+header {
+    background-color: #fffa29;
+    border: 1px solid #fffa29;
+    width: 150px;
+}
+footer {
+    background-color: #5bff68;
+    border: 1px solid #5bff68;
+    height: 50px;
+}
+nav {
+    background-color: blue;
+    border: 1px solid blue;
+    height: 100px;
+}
+#columns {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+#content {
+    background-color: ghostwhite;
+    flex-grow: 1;
+}
+#ad {
+    background-color: crimson;
+    border: 1px solid crimson;
+    flex: 0 0 80px;
+}
+#con {
+    display: flex;
+    flex-grow: 1;
+}
