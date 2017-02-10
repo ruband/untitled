@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: block;
+    flex: 0 0 200px;
+    position: relative;
+    line-height: 3;
+}
+.menu ul, li{
+    padding: 0;
+    margin: 0;
+    text-indent: 7mm;
+    text-transform: uppercase;
+}
+li a[href*="maim"]::before {
+    content: "\1F310";
+    color: red;
+}
+li a[href*="about"]::before {
+    content: "\2047";
+    color: red;
+}
+li a[href*="contacts"]::before {
+    content: "\1F582";
+    color: red;
+}
+li a[href*="facebook"]::before {
+    content: "\0066";
+    color: red;
+    text-transform: lowercase;
+}
+a[href*="facebook"]::after {
+    content: "\2197";
+    color: red;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    position: relative;
+}
+.menu a:hover {
+    background-color: gray;
+}
+div {
+    display: none;
+    background-color: white;
+    padding-left: 1cm;
+    padding-right: 1cm;
+}
+div:target {
+    display: block;
+}
+p {
+    text-indent: 7mm;
+}
+@media only screen and (max-width: 960px), only screen and (max-device-width: 960px) {
+    .menu {
+        flex-basis: 50px;
+    }
+}
+
